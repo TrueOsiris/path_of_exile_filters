@@ -10,4 +10,4 @@ This filter hides white and blue items unless they have max sockets with all con
 ## 2. NeverSink's Indepth Loot Filter
 Full credit to NeverSink. This very elaborate filter is here as a reference.
 
-[img]img/PoEoptions.png[/img]
+![Path of Exile options](img/PoEoptions.png)
