@@ -1,0 +1,200 @@
+#===============================================================================================================
+# [[0100]] FILTERED ITEMS - HIDE UNWANTED ITEMS
+#===============================================================================================================
+
+# Hide white and blue wearable items with less than max linked sockets
+#====================================================================================
+Hide # $type->hidelayer $tier->normalmagicwearables
+    Rarity Normal Magic
+    Class == "Gloves" "Boots" "Helmets"
+    LinkedSockets < 4
+    SetFontSize 18
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 20 20 0 0
+    DisableDropSound True
+
+Hide # $type->hidelayer $tier->normalmagicwearables
+    Rarity Normal Magic
+    Class == "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Wands" "Thrusting One Hand Swords" "Claws" "Daggers"
+    LinkedSockets < 3
+    SetFontSize 18
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 20 20 0 0
+    DisableDropSound True
+
+Hide # $type->hidelayer $tier->normalmagicwearables
+    Rarity Normal Magic
+    Class == "Body Armours" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Bows" "Warstaves"
+    LinkedSockets < 6
+    SetFontSize 18
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 20 20 0 0
+    DisableDropSound True
+
+# Hide white wearable items entirely, even if they have max linked sockets
+#====================================================================================
+Hide # $type->hidelayer $tier->normalwearables
+    Rarity Normal
+    Class == "Gloves" "Boots" "Helmets" "Body Armours" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Bows" "Warstaves"
+    SetFontSize 18
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 20 20 0 0
+    DisableDropSound True
+
+Hide # $type->hidelayer $tier->normalonehandersoffhands
+    Rarity Normal
+    Class == "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Wands" "Thrusting One Hand Swords" "Claws" "Daggers" "Shields"
+    SetFontSize 18
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 20 20 0 0
+    DisableDropSound True
+
+# Hide white and blue rings unless they have a socket
+#====================================================================================
+Hide # $type->hidelayer $tier->normalmagicrings
+    Rarity Normal Magic
+    Class == "Rings"
+    Sockets == 0
+    SetFontSize 18
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 20 20 0 0
+    DisableDropSound True
+
+# Hide white and blue amulets unless they are Onyx Amulets
+#====================================================================================
+Hide # $type->hidelayer $tier->normalmagicamulets
+    Rarity Normal Magic
+    Class == "Amulets"
+    BaseType != "Onyx Amulet"
+    SetFontSize 18
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 20 20 0 0
+    DisableDropSound True
+
+# Hide white and blue quivers
+#====================================================================================
+Hide # $type->hidelayer $tier->normalmagicquivers
+    Rarity Normal Magic
+    Class == "Quivers"
+    SetFontSize 18
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 20 20 0 0
+    DisableDropSound True
+
+# Hide white and blue belts
+#====================================================================================
+Hide # $type->hidelayer $tier->normalmagicbelts
+    Rarity Normal Magic
+    Class == "Belts"
+    SetFontSize 18
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 20 20 0 0
+    DisableDropSound True
+
+# Hide white mana and health flasks
+#====================================================================================
+Hide # $type->hidelayer $tier->normalflasks
+    Rarity Normal
+    Class == "Life Flasks" "Mana Flasks"
+    SetFontSize 18
+    SetBorderColor 0 0 0 0
+    SetBackgroundColor 20 20 0 0
+    DisableDropSound True
+
+#===============================================================================================================
+# [[0200]] HIGHLIGHTED ITEMS - SPECIFIC HIGHLIGHTING RULES
+#===============================================================================================================
+
+# Highlight yellow items with max linked sockets
+#====================================================================================
+Show # $type->highlight $tier->yellowmaxsockets
+    Rarity Rare
+    Class == "Gloves" "Boots" "Helmets"
+    LinkedSockets == 4
+    SetBorderColor 60 30 0 255
+
+Show # $type->highlight $tier->yellowmaxsockets
+    Rarity Rare
+    Class == "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Wands" "Thrusting One Hand Swords" "Claws" "Daggers" "Shields"
+    LinkedSockets == 3
+    SetBorderColor 60 30 0 255
+
+Show # $type->highlight $tier->yellowmaxsockets
+    Rarity Rare
+    Class == "Body Armours" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Bows" "Warstaves"
+    LinkedSockets == 6
+    SetBorderColor 60 30 0 255
+
+# Highlight yellow wearable items without max sockets in smaller font and more transparent background
+#====================================================================================
+Show # $type->highlight $tier->yellowwearablessmallsockets
+    Rarity Rare
+    Class == "Gloves" "Boots" "Helmets"
+    LinkedSockets < 4
+    SetFontSize 28
+    SetBackgroundColor 20 20 0 128
+
+Show # $type->highlight $tier->yellowwearablessmallsockets
+    Rarity Rare
+    Class == "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Wands" "Thrusting One Hand Swords" "Claws" "Daggers" "Shields"
+    LinkedSockets < 3
+    SetFontSize 28
+    SetBackgroundColor 20 20 0 128
+
+Show # $type->highlight $tier->yellowwearablessmallsockets
+    Rarity Rare
+    Class == "Body Armours" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Bows" "Warstaves"
+    LinkedSockets < 6
+    SetFontSize 28
+    SetBackgroundColor 20 20 0 128
+
+# Highlight flasks with pink border and make the font smaller if the item is white
+#====================================================================================
+Show # $type->highlight $tier->flasks
+    Rarity <= Magic
+    Class == "Utility Flasks" "Life Flasks" "Mana Flasks"
+    SetBorderColor 255 0 255 255
+    SetBackgroundColor 20 20 0 0
+
+Show # $type->highlight $tier->whiteflasks
+    Rarity Normal
+    Class == "Utility Flasks" "Life Flasks" "Mana Flasks"
+    SetFontSize 18
+
+# Highlight jewels with light blue border
+#====================================================================================
+Show # $type->highlight $tier->jewels
+    Class == "Jewel"
+    SetBorderColor 135 206 235 255
+
+# Highlight orbs with purple triangle minimap icon and purple border
+#====================================================================================
+Show # $type->highlight $tier->orbs
+    Class == "Stackable Currency"
+    BaseType == "Orb of Transmutation" "Orb of Augmentation" "Orb of Chance" "Orb of Alchemy" "Orb of Fusing" "Orb of Scouring" "Orb of Regret" "Vaal Orb" "Blessed Orb" "Cartographer's Chisel" "Ancient Orb" "Harbinger's Orb" "Regal Orb" "Exalted Orb" "Eternal Orb" "Engineer's Orb" "Instilling Orb" "Enkindling Orb" "Orb of Unmaking" "Orb of Binding" "Orb of Horizons" "Orb of Annulment" "Jeweller's Orb" "Chromatic Orb"
+    SetBorderColor 128 0 128 255
+    MinimapIcon 0 Purple Triangle
+
+# Highlight stackable currencies that are not orbs with a red border
+#====================================================================================
+Show # $type->highlight $tier->nonorbs
+    Class == "Stackable Currency"
+    BaseType == "Abrasive Catalyst" "Accelerating Catalyst" "Astragali" "Burial Medallion" "Cartographer's Chisel" "Gemcutter's Prism" "Glassblower's Bauble" "Imbued Catalyst" "Intrinsic Catalyst" "Lesser Eldritch Ember" "Lesser Eldritch Ichor" "Noxious Catalyst" "Prismatic Catalyst" "Scrap Metal" "Stacked Deck" "Tempering Catalyst" "Turbulent Catalyst" "Unstable Catalyst" "Ancient Shard" "Annulment Shard" "Blacksmith's Whetstone" "Chaos Shard" "Exalted Shard" "Harbinger's Shard" "Horizon Shard" "Regal Shard" "Fracturing Shard" "Mirror of Kalandra"
+    SetBorderColor 255 0 0 255
+
+
+# Highlight Portal Scroll and Scroll of Wisdom with circle minimap icon
+#====================================================================================
+Show # $type->highlight $tier->scrolls
+    Class == "Stackable Currency"
+    BaseType == "Portal Scroll" "Scroll of Wisdom"
+    MinimapIcon 1 Yellow Circle
+
+# Highlight gold with specific font and transparent background
+#====================================================================================
+Show # $type->highlight $tier->gold
+    BaseType == "Gold"
+    SetFontSize 32
+    SetTextColor 255 223 0 255
+    SetBorderColor 211 211 211 255
+    SetBackgroundColor 0 0 0 0
