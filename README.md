@@ -11,6 +11,8 @@ This filter hides white and blue items unless they have max sockets with all con
 ### 2. NeverSink's Indepth Loot Filter
 Full credit to NeverSink. This very elaborate filter is here as a reference.
 
+### 3. Stat requirement borders.
+Basic filter + border colors based on required stats. Work in progress
 
 ## Configuration
 
