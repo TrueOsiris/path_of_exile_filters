@@ -34,11 +34,20 @@ Basic filter + border colors based on required stats. (Work in progress, always 
 #### Wearable items get borders
 - border color dependent on stats required
   
-| Stat requirements | color |
-| ----------------- | ----- |
-| int | blue borders |
-| int = str | purple borders |
-| str | red borders |
+| Stat requirements | border color |
+| ----------------- | ------------ |
+| int | dark blue |
+| int > str | violet |
+| int = str | purple |
+| int < str | magenta / deep pink |
+| str | red |
+| str > dex | vibrant orange |
+| str = dex | yellow |
+| str < dex | lime green |
+| dex | green |
+| dex > int | teal |
+| dex = int | cyan |
+| dex < int | azure |
 
 #### Highlighted items on minimap
 - all orbs get a purple triangle on the map
