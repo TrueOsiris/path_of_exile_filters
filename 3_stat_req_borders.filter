@@ -115,9 +115,10 @@ Show
 # Rare and Unique wearable items coloring based on Basetype and linkedsockets
 #====================================================================================    
 #====================================================================================    
-# int         blue borders
-# int + str   purple borders
-# str         red borders
+# e.g.
+#   int         blue borders
+#   int = str   purple borders
+#   str         red borders
 #
 #==================================================================================== 
 #====================================================================================  
