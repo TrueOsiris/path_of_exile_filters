@@ -28,8 +28,8 @@ Basic filter + border colors based on required stats. (Work in progress, always 
 - white flasks of types Utility, Life, Mana, Hybrid
 
 #### Highlight Rare items that do not have max linked sockets
-- slightly transparant background
-- slightly transparent colored border (border color: see next point)
+- 50% transparant background
+- 50% transparent colored border (border color: see next point)
 - slightly smaller font
 
 #### Wearable items get borders
