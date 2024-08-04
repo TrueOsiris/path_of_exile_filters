@@ -36,18 +36,18 @@ Basic filter + border colors based on required stats. (Work in progress, always 
   
 | Stat requirements | border color |
 | ----------------- | ------------ |
-| int | dark blue |
-| int > str | violet |
-| int = str | purple |
-| int < str | magenta / deep pink |
-| str | red |
-| str > dex | vibrant orange |
-| str = dex | yellow |
-| str < dex | lime green |
-| dex | green |
-| dex > int | teal |
-| dex = int | cyan |
-| dex < int | azure |
+| int               | ![#0000FF](https://via.placeholder.com/15/0000FF/000000?text=+) dark blue |
+| int > str         | ![#7D00FF](https://via.placeholder.com/15/7D00FF/000000?text=+) violet |
+| int = str         | ![#7D007D](https://via.placeholder.com/15/7D007D/000000?text=+) purple |
+| int < str         | ![#FF007D](https://via.placeholder.com/15/FF007D/000000?text=+) magenta / deep pink |
+| str               | ![#FF0000](https://via.placeholder.com/15/FF0000/000000?text=+) red |
+| str > dex         | ![#FF7D00](https://via.placeholder.com/15/FF7D00/000000?text=+) vibrant orange |
+| str = dex         | ![#FFFF00](https://via.placeholder.com/15/FFFF00/000000?text=+) yellow |
+| str < dex         | ![#7DFF00](https://via.placeholder.com/15/7DFF00/000000?text=+) lime green |
+| dex               | ![#00FF00](https://via.placeholder.com/15/00FF00/000000?text=+) green |
+| dex > int         | ![#00FF7D](https://via.placeholder.com/15/00FF7D/000000?text=+) teal |
+| dex = int         | ![#00FFFF](https://via.placeholder.com/15/00FFFF/000000?text=+) cyan |
+| dex < int         | ![#007DFF](https://via.placeholder.com/15/007DFF/000000?text=+) azure |
 
 #### Highlighted items on minimap
 - all orbs get a purple triangle on the map
