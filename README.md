@@ -55,7 +55,7 @@ Basic filter + border colors based on required stats. (Work in progress, always 
 #### Highlighted items on minimap
 - all orbs get a purple triangle on the map
 
-![Path of Exile options](img/3.path_of_exile.png)
+![filter 3 screenshot](img/3.path_of_exile_filter.png)
 
 ## Configuration
 
