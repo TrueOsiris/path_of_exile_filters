@@ -51,10 +51,10 @@ Hide
     SetBackgroundColor 20 20 0 0
     DisableDropSound True
 
-# Hide all white and blue flasks, mana, and life flasks
+# Hide all white flasks, mana, and life flasks
 #====================================================================================
 Hide 
-    Rarity Normal Magic
+    Rarity Normal
     Class == "Utility Flasks" "Life Flasks" "Mana Flasks" "Hybrid Flasks"
     SetFontSize 18
     SetBorderColor 0 0 0 0
