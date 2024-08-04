@@ -1,5 +1,5 @@
 #===============================================================================================================
-# [[0100]] FILTERED ITEMS - HIDE UNWANTED ITEMS
+# https://github.com/TrueOsiris/path_of_exile_filters/3_stat_req_borders.filter
 #===============================================================================================================
 
 # Hide white (normal) and blue (magic) wearable items with less than max linked sockets
@@ -98,18 +98,18 @@ Show
     BaseType == "Abrasive Catalyst" "Accelerating Catalyst" "Astragali" "Burial Medallion" "Gemcutter's Prism" "Glassblower's Bauble" "Imbued Catalyst" "Intrinsic Catalyst" "Lesser Eldritch Ember" "Lesser Eldritch Ichor" "Noxious Catalyst" "Prismatic Catalyst" "Scrap Metal" "Stacked Deck" "Tempering Catalyst" "Turbulent Catalyst" "Unstable Catalyst" "Ancient Shard" "Annulment Shard" "Blacksmith's Whetstone" "Chaos Shard" "Exalted Shard" "Harbinger's Shard" "Gemcutter's Prism" "Horizon Shard" "Regal Shard" "Fracturing Shard" "Mirror of Kalandra"
     SetBorderColor 255 0 0 255
 
-# Highlight flasks with a pink border, white ones with slightly smaller font
+# Highlight flasks with a border, white ones with slightly smaller font
 #====================================================================================
 Show 
-    Class == "Utility Flasks" "Life Flasks" "Mana Flasks"
-    Rarity < Normal
-    SetBorderColor 255 105 180 255
+    Class == "Utility Flasks" "Life Flasks" "Mana Flasks" "Tinctures"
+    Rarity > Normal
+    SetBorderColor 255 240 220 255
 
 Show
-    Class == "Utility Flasks" "Life Flasks" "Mana Flasks"
+    Class == "Utility Flasks" "Life Flasks" "Mana Flasks" "Tinctures"
     Rarity Normal
     SetFontSize 28
-    SetBorderColor 255 105 180 255
+    SetBorderColor 255 240 220 255
 
 #====================================================================================    
 # Rare and Unique wearable items coloring based on Basetype and linkedsockets
@@ -125,19 +125,19 @@ Show
 #====================================================================================   
 #==================================================================================== 
  
-# 3 socket max - str
+# 3 socket max - STR
 #====================================================================================  
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Ancestral Club" "Ancient Sword" "Arming Axe" "Bladed Mace" "Boarding Axe" "Broad Axe" "Broad Sword" "Ceremonial Mace" "Cleaver" "Compound Spiked Shield" "Copper Sword" "Corroded Tower Shield" "Crested Tower Shield" "Decorative Axe" "Dragon Mace" "Driftwood Club" "Dusk Blade" "Elegant Sword" "Ezomyte Tower Shield" "Gavel" "Girded Tower Shield" "Hook Sword" "Jade Hatchet" "Legion Hammer" "Meatgrinder" "Ornate Mace" "Painted Tower Shield" "Pernach" "Phantom Mace" "Rawhide Tower Shield" "Rusted Hatchet" "Rusted Sword" "Sabre" "Spectral Axe" "Spiked Club" "Splintered Tower Shield" "Stone Hammer" "Tenderizer" "Tribal Club" "War Buckler" "War Hammer" "War Sword"
+    BaseType == "Ancestral Club" "Ancient Sword" "Arming Axe" "Battle Hammer" "Bladed Mace" "Boarding Axe" "Broad Axe" "Broad Sword" "Bronze Tower Shield" "Ceremonial Mace" "Cleaver" "Compound Spiked Shield" "Copper Sword" "Corroded Tower Shield" "Crested Tower Shield" "Decorative Axe" "Dragon Mace" "Driftwood Club" "Dusk Blade" "Ebony Tower Shield" "Elegant Sword" "Ezomyte Tower Shield" "Gavel" "Girded Tower Shield" "Hook Sword" "Jade Hatchet" "Legion Hammer" "Meatgrinder" "Ornate Mace" "Painted Tower Shield" "Pernach" "Phantom Mace" "Rawhide Tower Shield" "Rock Breaker" "Rusted Hatchet" "Rusted Sword" "Sabre" "Shagreen Tower Shield" "Spectral Axe" "Spiked Club" "Spiny Maul" "Splintered Tower Shield" "Stone Hammer" "Tenderizer" "Tribal Club" "War Buckler" "War Hammer" 
     LinkedSockets < 3
-    SetFontSize 28
+    SetFontSize 26
     SetBackgroundColor 20 20 0 128
-    SetBorderColor 240 20 20 255
+    SetBorderColor 240 20 20 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Ancestral Club" "Ancient Sword" "Arming Axe" "Bladed Mace" "Boarding Axe" "Broad Axe" "Broad Sword" "Ceremonial Mace" "Cleaver" "Compound Spiked Shield" "Copper Sword" "Corroded Tower Shield" "Crested Tower Shield" "Decorative Axe" "Dragon Mace" "Driftwood Club" "Dusk Blade" "Elegant Sword" "Ezomyte Tower Shield" "Gavel" "Girded Tower Shield" "Hook Sword" "Jade Hatchet" "Legion Hammer" "Meatgrinder" "Ornate Mace" "Painted Tower Shield" "Pernach" "Phantom Mace" "Rawhide Tower Shield" "Rusted Hatchet" "Rusted Sword" "Sabre" "Spectral Axe" "Spiked Club" "Splintered Tower Shield" "Stone Hammer" "Tenderizer" "Tribal Club" "War Buckler" "War Hammer" "War Sword"
+    BaseType == "Ancestral Club" "Ancient Sword" "Arming Axe" "Battle Hammer" "Bladed Mace" "Boarding Axe" "Broad Axe" "Broad Sword" "Bronze Tower Shield" "Ceremonial Mace" "Cleaver" "Compound Spiked Shield" "Copper Sword" "Corroded Tower Shield" "Crested Tower Shield" "Decorative Axe" "Dragon Mace" "Driftwood Club" "Dusk Blade" "Ebony Tower Shield" "Elegant Sword" "Ezomyte Tower Shield" "Gavel" "Girded Tower Shield" "Hook Sword" "Jade Hatchet" "Legion Hammer" "Meatgrinder" "Ornate Mace" "Painted Tower Shield" "Pernach" "Phantom Mace" "Rawhide Tower Shield" "Rock Breaker" "Rusted Hatchet" "Rusted Sword" "Sabre" "Shagreen Tower Shield" "Spectral Axe" "Spiked Club" "Spiny Maul" "Splintered Tower Shield" "Stone Hammer" "Tenderizer" "Tribal Club" "War Buckler" "War Hammer" 
     LinkedSockets == 3
     SetBorderColor 255 20 20 255
     
@@ -145,28 +145,27 @@ Show
 #====================================================================================  
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Abyssal Sceptre" "Ancient Spirit Shield" "Blood Sceptre" "Ivory Spirit Shield" "Laminated Kite Shield" "Lead Sceptre" "Legion Boots" "Platinum Sceptre" "Royal Sceptre" "Stag Sceptre" "Walnut Spirit Shield"
+    BaseType == "Abyssal Sceptre" "Ancient Spirit Shield" "Blood Sceptre" "Carnal Sceptre" "Ivory Spirit Shield" "Laminated Kite Shield" "Lead Sceptre" "Legion Boots" "Mosaic Kite Shield" "Karui Sceptre" "Platinum Sceptre" "Royal Sceptre" "Stag Sceptre" "Tyrant's Sekhem" "Vaal Sceptre" "Walnut Spirit Shield"
     LinkedSockets < 3
     SetFontSize 26
-    SetBackgroundColor 20 20 0 128   
-    SetBorderColor 250 20 255 255
+    SetBackgroundColor 20 20 0 128
+    SetBorderColor 255 20 235 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Abyssal Sceptre" "Ancient Spirit Shield" "Blood Sceptre" "Ivory Spirit Shield" "Laminated Kite Shield" "Lead Sceptre" "Legion Boots" "Platinum Sceptre" "Royal Sceptre" "Stag Sceptre" "Walnut Spirit Shield"
+    BaseType == "Abyssal Sceptre" "Ancient Spirit Shield" "Blood Sceptre" "Carnal Sceptre" "Ivory Spirit Shield" "Laminated Kite Shield" "Lead Sceptre" "Legion Boots" "Mosaic Kite Shield" "Karui Sceptre" "Platinum Sceptre" "Royal Sceptre" "Stag Sceptre" "Tyrant's Sekhem" "Vaal Sceptre" "Walnut Spirit Shield"
     LinkedSockets == 3  
-    SetBorderColor 250 20 255 255
+    SetBorderColor 255 20 235 255
     
 # 3 socket max - STR > INT
 #====================================================================================  
 Show
     Rarity Normal Magic Rare Unique
-    #BaseType == "Bastard Sword" "Jade Hatchet" "Longsword" "Rusted Hatchet"
     BaseType == "Ancestral Club" "Ancient Sword" "Arming Axe" "Bastard Sword" "Bladed Mace" "Boarding Axe" "Broad Axe" "Broad Sword" "Cleaver" "Compound Spiked Shield" "Copper Sword" "Corroded Tower Shield" "Crested Tower Shield" "Decorative Axe" "Dragon Mace" "Driftwood Club" "Dusk Blade" "Elegant Sword" "Gavel" "Girded Tower Shield" "Hook Sword" "Jade Hatchet" "Longsword" "Meatgrinder" "Noble Axe" "Painted Tower Shield" "Rawhide Tower Shield" "Rusted Hatchet" "Sabre" "Spectral Axe" "Spiked Club" "Stone Hammer" "Tenderizer" "Tribal Club" "War Buckler" "War Hammer" "War Sword"
     LinkedSockets < 3
     SetFontSize 26
-    SetBackgroundColor 20 20 0 128   
-    SetBorderColor 250 20 130 255
+    SetBackgroundColor 20 20 0 128
+    SetBorderColor 250 20 130 120
     
 Show
     Rarity Normal Magic Rare Unique
@@ -178,15 +177,15 @@ Show
 #====================================================================================  
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Angelic Kite Shield" "Archon Kite Shield" "Bone Spirit Shield" "Branded Kite Shield" "Carved Wand" "Crystal Sceptre" "Crystal Wand" "Demon Dagger" "Driftwood Wand" "Goat's Horn" "Golden Kris" "Grinning Fetish" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Platinum Kris" "Prophecy Wand" "Quartz Wand" "Spiraled Wand" "Twig Spirit Shield" "War Buckler" "Yew Spirit Shield"
+    BaseType == "Angelic Kite Shield" "Archon Kite Shield" "Bone Spirit Shield" "Branded Kite Shield" "Carved Wand" "Crystal Sceptre" "Crystal Wand" "Demon Dagger" "Driftwood Wand" "Goat's Horn" "Golden Kris" "Grinning Fetish" "Opal Sceptre" "Pagan Wand" "Platinum Kris" "Prophecy Wand" "Quartz Wand" "Spiraled Wand"  "War Buckler" "Void Sceptre"
     LinkedSockets < 3
     SetFontSize 26
-    SetBackgroundColor 20 20 0 128   
-    SetBorderColor 120 20 250 255
+    SetBackgroundColor 20 20 0 128
+    SetBorderColor 120 20 250 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Angelic Kite Shield" "Archon Kite Shield" "Bone Spirit Shield" "Branded Kite Shield" "Carved Wand" "Crystal Sceptre" "Crystal Wand" "Demon Dagger" "Driftwood Wand" "Goat's Horn" "Golden Kris" "Grinning Fetish" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Platinum Kris" "Prophecy Wand" "Quartz Wand" "Spiraled Wand" "Twig Spirit Shield" "War Buckler" "Yew Spirit Shield"
+    BaseType == "Angelic Kite Shield" "Archon Kite Shield" "Bone Spirit Shield" "Branded Kite Shield" "Carved Wand" "Crystal Sceptre" "Crystal Wand" "Demon Dagger" "Driftwood Wand" "Goat's Horn" "Golden Kris" "Grinning Fetish" "Opal Sceptre" "Pagan Wand" "Platinum Kris" "Prophecy Wand" "Quartz Wand" "Spiraled Wand" "War Buckler" "Void Sceptre"
     LinkedSockets == 3 
     SetBorderColor 120 20 250 255
     
@@ -195,15 +194,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Chiming Spirit Shield" "Demon's Horn" "Driftwood Wand" "Goat's Horn" "Carved Wand" "Omen Wand" "Quartz Wand" "Tornado Wand" "Twig Spirit Shield" "Yew Spirit Shield" "Bone Spirit Shield" 
+    BaseType == "Accumulator Wand" "Ancient Spirit Shield" "Bone Spirit Shield" "Brass Spirit Shield" "Calling Wand" "Carved Wand" "Chiming Spirit Shield" "Coiled Wand" "Congregator Wand" "Convoking Wand" "Crystal Wand" "Demon's Horn" "Driftwood Wand" "Engraved Wand" "Faun's Horn" "Fossilised Spirit Shield" "Goat's Horn" "Harmonic Spirit Shield" "Heathen Wand" "Imbued Wand" "Ivory Spirit Shield" "Jingling Spirit Shield" "Lacewood Spirit Shield" "Opal Wand" "Omen Wand" "Pagan Wand" "Prophecy Wand" "Quartz Wand" "Sage Wand" "Spiraled Wand" "Subsuming Spirit Shield" "Tarnished Spirit Shield" "Thorium Spirit Shield" "Titanium Spirit Shield" "Tornado Wand" "Transfer-attuned Spirit Shield" "Twig Spirit Shield" "Vaal Spirit Shield" "Walnut Spirit Shield" "Yew Spirit Shield"
     LinkedSockets < 3
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 50 50 255 255
+    SetBorderColor 60 60 255 180
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Chiming Spirit Shield" "Demon's Horn" "Driftwood Wand" "Goat's Horn" "Carved Wand" "Omen Wand" "Quartz Wand" "Tornado Wand" "Twig Spirit Shield" "Yew Spirit Shield" "Bone Spirit Shield"
+    BaseType == "Accumulator Wand" "Ancient Spirit Shield" "Bone Spirit Shield" "Brass Spirit Shield" "Calling Wand" "Carved Wand" "Chiming Spirit Shield" "Coiled Wand" "Congregator Wand" "Convoking Wand" "Crystal Wand" "Demon's Horn" "Driftwood Wand" "Engraved Wand" "Faun's Horn" "Fossilised Spirit Shield" "Goat's Horn" "Harmonic Spirit Shield" "Heathen Wand" "Imbued Wand" "Ivory Spirit Shield" "Jingling Spirit Shield" "Lacewood Spirit Shield" "Opal Wand" "Omen Wand" "Pagan Wand" "Prophecy Wand" "Quartz Wand" "Sage Wand" "Spiraled Wand" "Subsuming Spirit Shield" "Tarnished Spirit Shield" "Thorium Spirit Shield" "Titanium Spirit Shield" "Tornado Wand" "Transfer-attuned Spirit Shield" "Twig Spirit Shield" "Vaal Spirit Shield" "Walnut Spirit Shield" "Yew Spirit Shield"
     LinkedSockets == 3    
     SetBorderColor 50 50 255 255
     
@@ -211,15 +210,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Ambusher" "Assassin's Boots" "Awl" "Cat's Paw" "Eagle Claw" "Eye Gouger" "Ezomyte Spiked Shield" "Glass Shank" "Jingling Spirit Shield" "Nailed Fist" "Regicide Mask" "Sharktooth Claw" "Skinning Knife" "Sovereign Spiked Shield" "Alder Spiked Shield" "Tarnished Spirit Shield" "Throat Stabber"
+    BaseType == "Alder Spiked Shield" "Ambusher" "Awl" "Blinder" "Boot Knife" "Carving Knife" "Copper Kris" "Double Claw" "Eagle Claw" "Eye Gouger" "Ezomyte Spiked Shield" "Fright Claw" "Gemini Claw" "Glass Shank" "Gut Ripper" "Imp Dagger" "Imperial Claw" "Jingling Spirit Shield" "Mirrored Spiked Shield" "Nailed Fist" "Noble Claw" "Platinum Kris" "Poignard" "Polished Spiked Shield" "Prehistoric Claw" "Royal Skean" "Sharktooth Claw" "Skean" "Skinning Knife" "Sovereign Spiked Shield" "Tarnished Spirit Shield" "Terror Claw" "Throat Stabber" "Timeworn Claw" "Trisula" "Twin Claw" "Vaal Claw" "Void Fangs"
     LinkedSockets < 3
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 20 250 255 255
+    SetBorderColor 20 250 255 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Ambusher" "Assassin's Boots" "Awl" "Cat's Paw" "Eagle Claw" "Eye Gouger" "Ezomyte Spiked Shield" "Glass Shank" "Jingling Spirit Shield" "Nailed Fist" "Regicide Mask" "Sharktooth Claw" "Skinning Knife" "Sovereign Spiked Shield" "Alder Spiked Shield" "Tarnished Spirit Shield" "Throat Stabber"
+    BaseType == "Alder Spiked Shield" "Ambusher" "Awl" "Blinder" "Boot Knife" "Carving Knife" "Copper Kris" "Double Claw" "Eagle Claw" "Eye Gouger" "Ezomyte Spiked Shield" "Fright Claw" "Gemini Claw" "Glass Shank" "Gut Ripper" "Imp Dagger" "Imperial Claw" "Jingling Spirit Shield" "Mirrored Spiked Shield" "Nailed Fist" "Noble Claw" "Platinum Kris" "Poignard" "Polished Spiked Shield" "Prehistoric Claw" "Royal Skean" "Sharktooth Claw" "Skean" "Skinning Knife" "Sovereign Spiked Shield" "Tarnished Spirit Shield" "Terror Claw" "Throat Stabber" "Timeworn Claw" "Trisula" "Twin Claw" "Vaal Claw" "Void Fangs"
     LinkedSockets == 3    
     SetBorderColor 20 250 255 255   
 
@@ -227,15 +226,15 @@ Show
 #====================================================================================
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Butcher Knife" "Crude Bow" "Flaying Knife" "Gutting Knife" "Hellion's Paw" "Noble Claw" "Tiger's Paw"
+    BaseType == "Alder Spiked Shield" "Boot Blade" "Butcher Knife" "Carving Knife" "Cat's Paw" "Copper Kris" "Ezomyte Spiked Shield" "Flaying Knife" "Glass Shank" "Gutting Knife" "Hellion's Paw" "Imp Dagger" "Platinum Kris" "Prong Dagger" "Royal Skean" "Sharktooth Claw" "Skean" "Skinning Knife" "Sovereign Spiked Shield" "Stiletto" "Tiger's Paw" "Trisula"
     LinkedSockets < 3
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 20 250 140 255
+    SetBorderColor 20 250 140 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Butcher Knife" "Crude Bow" "Flaying Knife" "Gutting Knife" "Hellion's Paw" "Noble Claw" "Tiger's Paw"
+    BaseType == "Alder Spiked Shield" "Boot Blade" "Butcher Knife" "Carving Knife" "Cat's Paw" "Copper Kris" "Ezomyte Spiked Shield" "Flaying Knife" "Glass Shank" "Gutting Knife" "Hellion's Paw" "Imp Dagger" "Platinum Kris" "Prong Dagger" "Royal Skean" "Sharktooth Claw" "Skean" "Skinning Knife" "Sovereign Spiked Shield" "Stiletto" "Tiger's Paw" "Trisula"
     LinkedSockets == 3    
     SetBorderColor 20 250 140 255
 
@@ -243,15 +242,15 @@ Show
 #====================================================================================
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Crystal Wand" "Engraved Wand" "Ezomyte Dagger" "Fiend Dagger" "Great White Claw" "Jingling Spirit Shield" "Tarnished Spirit Shield"
+    BaseType == "Crystal Wand" "Engraved Wand" "Ezomyte Dagger" "Fiend Dagger" "Great White Claw" "Imperial Skean" "Jingling Spirit Shield" "Platinum Kris" "Slaughter Knife" "Tarnished Spirit Shield"
     LinkedSockets < 3
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 20 140 255 255
+    SetBorderColor 20 140 255 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Crystal Wand" "Engraved Wand" "Ezomyte Dagger" "Fiend Dagger" "Great White Claw" "Jingling Spirit Shield" "Tarnished Spirit Shield"
+    BaseType == "Crystal Wand" "Engraved Wand" "Ezomyte Dagger" "Fiend Dagger" "Great White Claw" "Imperial Skean" "Jingling Spirit Shield" "Platinum Kris" "Slaughter Knife" "Tarnished Spirit Shield"
     LinkedSockets == 3    
     SetBorderColor 20 140 255 255 
 
@@ -259,15 +258,15 @@ Show
 #====================================================================================
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Crude Bow" "Dragonbone Rapier" "Enameled Buckler" "Ironwood Buckler" "Long Bow" "Nailed Fist" "Shagreen Boots" "Sharktooth Claw" "Short Bow" "Tempered Foil" "Vaal Buckler"
+    BaseType == "Apex Rapier" "Corrugated Buckler" "Courtesan Sword" "Crusader Buckler" "Dragonbone Rapier" "Enameled Buckler" "Fancy Foil" "Golden Buckler" "Ironwood Buckler" "Lacquered Buckler" "Nailed Fist" "Primeval Rapier" "Sharktooth Claw" "Spiraled Foil" "Stealth Boots" "Tempered Foil" "Thorn Rapier" "Vaal Buckler"
     LinkedSockets < 3
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 0 255 0 255
+    SetBorderColor 0 255 0 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Crude Bow" "Dragonbone Rapier" "Enameled Buckler" "Ironwood Buckler" "Long Bow" "Nailed Fist" "Shagreen Boots" "Sharktooth Claw" "Short Bow" "Tempered Foil" "Vaal Buckler"
+    BaseType == "Apex Rapier" "Corrugated Buckler" "Courtesan Sword" "Crusader Buckler" "Dragonbone Rapier" "Enameled Buckler" "Fancy Foil" "Golden Buckler" "Ironwood Buckler" "Lacquered Buckler" "Nailed Fist" "Primeval Rapier" "Sharktooth Claw" "Spiraled Foil" "Stealth Boots" "Tempered Foil" "Thorn Rapier" "Vaal Buckler"
     LinkedSockets == 3    
     SetBorderColor 0 255 0 255
     
@@ -275,15 +274,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Battered Helm" "Bronzescale Boots" "Crimson Round Shield" "Gemstone Sword" "Hydrascale Boots" "Sallet" "Steelscale Gauntlets" "Visored Sallet" 
+    BaseType == "Baroque Round Shield" "Baselard" "Crimson Round Shield" "Sallet" "Visored Sallet" "Ancient Sword" "Anarchic Spiritblade" "Baselard" "Capricious Spiritblade" "Charan's Sword" "Copper Sword" "Dusk Blade" "Elder Sword" "Gemstone Sword" "Gladius" "Grappler" "Hook Sword" "Midnight Blade" "Spiny Round Shield" "Teak Round Shield" "Tiger Hook" "Twilight Blade" "Variscite Blade" "Vaal Blade"
     LinkedSockets < 3
     SetFontSize 26
-    SetBackgroundColor 20 20 0 128   
-    SetBorderColor 255 255 0 255
+    SetBackgroundColor 20 20 0 128
+    SetBorderColor 255 255 0 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Battered Helm" "Bronzescale Boots" "Crimson Round Shield" "Gemstone Sword" "Hydrascale Boots" "Legion Boots" "Sallet" "Steelscale Gauntlets" "Visored Sallet"  
+    BaseType == "Baroque Round Shield" "Baselard" "Crimson Round Shield" "Sallet" "Visored Sallet" "Ancient Sword" "Anarchic Spiritblade" "Baselard" "Capricious Spiritblade" "Charan's Sword" "Copper Sword" "Dusk Blade" "Elder Sword" "Gemstone Sword" "Gladius" "Grappler" "Hook Sword" "Midnight Blade" "Spiny Round Shield" "Teak Round Shield" "Tiger Hook" "Twilight Blade" "Variscite Blade" "Vaal Blade"
     LinkedSockets == 3  
     SetBorderColor 255 255 0 255
 
@@ -292,7 +291,7 @@ Show
 #====================================================================================  
 Show
     Rarity Normal Magic Rare Unique
-    BaseType ==  "Abyssal Axe" "Battle Sword" "Butcher Axe" "Copper Sword" "Driftwood Club" "Engraved Hatchet" "Karui Axe" "Legion Sword" "Reaver Axe" "Rusted Sword" "Tribal Club" "Vaal Hatchet" "Wrist Chopper"
+    BaseType ==  "Abyssal Axe" "Battle Sword" "Butcher Axe" "Ceremonial Axe" "Chest Splitter" "Copper Sword" "Driftwood Club" "Engraved Hatchet" "Karui Axe" "Legion Sword" "Reaver Axe" "Royal Axe" "Rusted Sword" "Siege Axe" "Tribal Club" "Vaal Hatchet" "War Axe" "War Sword" "Wraith Axe" "Wrist Chopper" 
     LinkedSockets < 3
     SetBackgroundColor 20 20 0 104
     SetFontSize 28
@@ -300,7 +299,7 @@ Show
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType ==  "Abyssal Axe" "Battle Sword" "Butcher Axe" "Copper Sword" "Driftwood Club" "Engraved Hatchet" "Karui Axe" "Legion Sword" "Reaver Axe" "Rusted Sword" "Tribal Club" "Vaal Hatchet" "Wrist Chopper"
+    BaseType ==  "Abyssal Axe" "Battle Sword" "Butcher Axe" "Ceremonial Axe" "Chest Splitter" "Copper Sword" "Driftwood Club" "Engraved Hatchet" "Karui Axe" "Legion Sword" "Reaver Axe" "Royal Axe" "Rusted Sword" "Siege Axe" "Tribal Club" "Vaal Hatchet" "War Axe" "War Sword" "Wraith Axe" "Wrist Chopper" 
     LinkedSockets == 3
     SetBorderColor 250 80 0 255
     
@@ -308,15 +307,15 @@ Show
 #====================================================================================  
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Corsair Sword" "Crude Bow" "Nailed Fist" "Sharktooth Claw" "Short Bow"
+    BaseType == "Corsair Sword" "Cutlass" "Elegant Sword" "Eternal Sword" "Graceful Sword"
     LinkedSockets < 3
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 120 255 20 255
+    SetBorderColor 120 255 20 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Corsair Sword" "Crude Bow" "Nailed Fist" "Sharktooth Claw" "Short Bow"
+    BaseType == "Corsair Sword" "Cutlass" "Elegant Sword" "Eternal Sword" "Graceful Sword"
     LinkedSockets == 3    
     SetBorderColor 120 255 20 255
     
@@ -326,39 +325,39 @@ Show
 #==================================================================================== 
 #====================================================================================    
 
-# 4 socket max - str
+# 4 socket max - STR
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Ancient Gauntlets" "Ancient Greaves" "Antique Gauntlets" "Antique Greaves" "Barbute Helmet" "Bronze Gauntlets" "Close Helmet" "Cone Helmet" "Gladiator Helmet" "Goliath Gauntlets" "Goliath Greaves" "Iron Gauntlets" "Iron Greaves" "Iron Hat" "Plated Gauntlets" "Plated Greaves" "Reaver Helmet" "Reinforced Greaves" "Samite Helmet" "Siege Helmet" "Steel Gauntlets" "Steel Greaves" "Vaal Gauntlets" "Vaal Greaves"
+    BaseType == "Ancient Gauntlets" "Ancient Greaves" "Antique Gauntlets" "Antique Greaves" "Barbute Helmet" "Bronze Gauntlets" "Close Helmet" "Cone Helmet" "Eternal Burgonet" "Ezomyte Burgonet" "Gladiator Helmet" "Goliath Gauntlets" "Goliath Greaves" "Iron Gauntlets" "Iron Greaves" "Iron Hat" "Plated Gauntlets" "Plated Greaves" "Reaver Helmet" "Reinforced Greaves" "Royal Burgonet" "Samite Helmet" "Siege Helmet" "Steel Gauntlets" "Steel Greaves" "Vaal Gauntlets" "Vaal Greaves"
     LinkedSockets < 4
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 250 20 20 255
+    SetBorderColor 250 20 20 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Ancient Gauntlets" "Ancient Greaves" "Antique Gauntlets" "Antique Greaves" "Barbute Helmet" "Bronze Gauntlets" "Close Helmet" "Cone Helmet" "Gladiator Helmet" "Goliath Gauntlets" "Goliath Greaves" "Iron Gauntlets" "Iron Greaves" "Iron Hat" "Plated Gauntlets" "Plated Greaves" "Reaver Helmet" "Reinforced Greaves" "Samite Helmet" "Siege Helmet" "Steel Gauntlets" "Steel Greaves" "Vaal Gauntlets" "Vaal Greaves"
+    BaseType == "Ancient Gauntlets" "Ancient Greaves" "Antique Gauntlets" "Antique Greaves" "Barbute Helmet" "Bronze Gauntlets" "Close Helmet" "Cone Helmet" "Eternal Burgonet" "Ezomyte Burgonet" "Gladiator Helmet" "Goliath Gauntlets" "Goliath Greaves" "Iron Gauntlets" "Iron Greaves" "Iron Hat" "Plated Gauntlets" "Plated Greaves" "Reaver Helmet" "Reinforced Greaves" "Royal Burgonet" "Samite Helmet" "Siege Helmet" "Steel Gauntlets" "Steel Greaves" "Vaal Gauntlets" "Vaal Greaves"
     LinkedSockets == 4
     SetBorderColor 250 20 20 255
     
-# 4 socket max - int = str 
+# 4 socket max - INT = STR 
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Crusader Boots" "Crusader Gloves" "Magistrate Crown" "Praetor Crown" "Prophet Crown" "Titan Gauntlets" "Titan Greaves" "Zealot Helmet"
+    BaseType == "Crusader Boots" "Crusader Gloves" "Great Crown" "Magistrate Crown" "Praetor Crown" "Prophet Crown" "Titan Gauntlets" "Titan Greaves" "Zealot Gloves" "Zealot Helmet"
     LinkedSockets < 4
     SetFontSize 26
-    SetBackgroundColor 20 20 0 128   
-    SetBorderColor 250 20 255 255
+    SetBackgroundColor 20 20 0 128
+    SetBorderColor 250 20 255 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Crusader Boots" "Crusader Gloves" "Magistrate Crown" "Praetor Crown" "Prophet Crown" "Titan Gauntlets" "Titan Greaves" "Zealot Helmet"
+    BaseType == "Crusader Boots" "Crusader Gloves" "Great Crown" "Magistrate Crown" "Praetor Crown" "Prophet Crown" "Titan Gauntlets" "Titan Greaves" "Zealot Gloves" "Zealot Helmet"
     LinkedSockets == 4
     SetBorderColor 250 20 255 255    
     
-# 4 socket max - int < str 
+# 4 socket max - INT < STR 
 #==================================================================================== 
     
 Show
@@ -366,8 +365,8 @@ Show
     BaseType == "Soldier Boots" "Soldier Gloves" "Soldier Helmet"
     LinkedSockets < 4
     SetFontSize 26
-    SetBackgroundColor 20 20 0 128   
-    SetBorderColor 250 20 120 255
+    SetBackgroundColor 20 20 0 128
+    SetBorderColor 250 20 120 120
     
 Show
     Rarity Normal Magic Rare Unique
@@ -375,19 +374,19 @@ Show
     LinkedSockets == 4
     SetBorderColor 250 20 120 255
     
-# 4 socket max - int > str 
+# 4 socket max - INT > STR 
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Arcanist Slippers" "Satin Slippers" "Sorcerer Gloves" "Mind Cage" "Hubris Circlet" "Bone Circlet" "Lunaris Circlet" "Steel Circlet" "Necromancer Circlet" "Solaris Circlet" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet"
+    BaseType == "Satin Slippers" "Hubris Circlet" "Bone Circlet" "Lunaris Circlet" "Steel Circlet" "Solaris Circlet" "Mind Cage" "Moonlit Circlet" "Sorcerer Gloves" "Sunfire Circlet" "Lich's Circlet"
     LinkedSockets < 4
     SetFontSize 26
-    SetBackgroundColor 20 20 0 128   
-    SetBorderColor 120 20 250 255
+    SetBackgroundColor 20 20 0 128
+    SetBorderColor 120 20 250 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Arcanist Slippers" "Satin Slippers" "Sorcerer Gloves" "Mind Cage" "Hubris Circlet" "Bone Circlet" "Lunaris Circlet" "Steel Circlet" "Necromancer Circlet" "Solaris Circlet" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet"
+    BaseType == "Satin Slippers" "Hubris Circlet" "Bone Circlet" "Lunaris Circlet" "Steel Circlet" "Solaris Circlet" "Mind Cage" "Moonlit Circlet" "Sorcerer Gloves" "Sunfire Circlet" "Lich's Circlet"
     LinkedSockets == 4
     SetBorderColor 120 20 250 255
     
@@ -395,15 +394,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Arcanist Slippers" "Bone Circlet" "Convening Wand" "Hubris Circlet" "Lich's Circlet" "Lunaris Circlet" "Mind Cage" "Moonlit Circlet" "Necromancer Circlet" "Satin Slippers" "Silk Slippers" "Solaris Circlet" "Sorcerer Gloves" "Steel Circlet" "Sunfire Circlet" 
+    BaseType == "Arcanist Gloves" "Arcanist Slippers" "Bone Circlet" "Conjurer Boots" "Conjurer Gloves" "Convening Wand" "Hubris Circlet" "Lich's Circlet" "Lunaris Circlet" "Mind Cage" "Moonlit Circlet" "Necromancer Circlet" "Samite Slippers" "Satin Gloves" "Satin Slippers" "Silk Slippers" "Solaris Circlet" "Sorcerer Gloves" "Steel Circlet" "Sunfire Circlet" 
     LinkedSockets < 4
     SetFontSize 26
     SetBackgroundColor 20 20 0 104
-    SetBorderColor 50 50 255 255
+    SetBorderColor 50 50 255 176
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Arcanist Slippers" "Bone Circlet" "Convening Wand" "Hubris Circlet" "Lich's Circlet" "Lunaris Circlet" "Mind Cage" "Moonlit Circlet" "Necromancer Circlet" "Satin Slippers" "Silk Slippers" "Solaris Circlet" "Sorcerer Gloves" "Steel Circlet" "Sunfire Circlet" 
+    BaseType == "Arcanist Gloves" "Arcanist Slippers" "Bone Circlet" "Conjurer Boots" "Conjurer Gloves" "Convening Wand" "Hubris Circlet" "Lich's Circlet" "Lunaris Circlet" "Mind Cage" "Moonlit Circlet" "Necromancer Circlet" "Samite Slippers" "Satin Gloves" "Satin Slippers" "Silk Slippers" "Solaris Circlet" "Sorcerer Gloves" "Steel Circlet" "Sunfire Circlet" 
     LinkedSockets == 4    
     SetBorderColor 50 50 255 255
     
@@ -412,15 +411,15 @@ Show
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Ambush Mitts" "Assassin's Mitts" "Clasped Mitts" "Harlequin Mask" "Noble Tricorne" "Slink Boots" "Slink Gloves"
+    BaseType == "Ambush Boots" "Ambush Mitts" "Assassin's Mitts" "Assassin's Boots" "Carnal Mitts" "Clasped Boots" "Clasped Mitts" "Golden Mask" "Harlequin Mask"  "Regicide Mask" "Slink Boots" "Slink Gloves" "Trapper Boots"
     LinkedSockets < 4
     SetFontSize 26
     SetBackgroundColor 20 20 0 104
-    SetBorderColor 20 250 255 255
+    SetBorderColor 20 250 255 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Ambush Mitts" "Assassin's Mitts" "Clasped Mitts" "Harlequin Mask" "Noble Tricorne" "Slink Boots" "Slink Gloves" 
+    BaseType == "Ambush Boots" "Ambush Mitts" "Assassin's Mitts" "Assassin's Boots" "Carnal Mitts" "Clasped Boots" "Clasped Mitts" "Golden Mask" "Harlequin Mask"  "Regicide Mask" "Slink Boots" "Slink Gloves" "Trapper Boots" 
     LinkedSockets == 4    
     SetBorderColor 20 250 255 255 
     
@@ -433,7 +432,7 @@ Show
     LinkedSockets < 4
     SetFontSize 26
     SetBackgroundColor 20 20 0 104
-    SetBorderColor 150 250 20 255
+    SetBorderColor 150 250 20 120
     
 Show
     Rarity Normal Magic Rare Unique
@@ -441,19 +440,19 @@ Show
     LinkedSockets == 4    
     SetBorderColor 150 250 20 255
     
-# 4 socket max - int > dex
+# 4 socket max - INT > DEX
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Sorcerer Boots" "Sorcerer Gloves"
+    BaseType == "Deicide Mask" "Sorcerer Boots" "Sorcerer Gloves"
     LinkedSockets < 4
     SetFontSize 26
     SetBackgroundColor 20 20 0 104
-    SetBorderColor 20 120 255 255
+    SetBorderColor 20 120 255 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Sorcerer Boots" "Sorcerer Gloves"
+    BaseType == "Deicide Mask" "Sorcerer Boots" "Sorcerer Gloves"
     LinkedSockets == 4    
     SetBorderColor 20 120 255 255
     
@@ -462,15 +461,15 @@ Show
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Deerskin Boots" "Ironscale Boots" "Deerskin Gloves" 
+    BaseType == "Deerskin Boots" "Deerskin Gloves" "Ironscale Boots" "Noble Tricorne" "Shagreen Boots" "Silken Hood" "Sinner Tricorne" "Stealth Gloves" "Ursine Pelt"
     LinkedSockets < 4
     SetFontSize 26
     SetBackgroundColor 20 20 0 104
-    SetBorderColor 0 255 0 255
+    SetBorderColor 0 255 0 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Deerskin Boots" "Ironscale Boots" "Deerskin Gloves"
+    BaseType == "Deerskin Boots" "Deerskin Gloves" "Ironscale Boots" "Noble Tricorne" "Shagreen Boots" "Silken Hood" "Sinner Tricorne" "Stealth Gloves" "Ursine Pelt"
     LinkedSockets == 4    
     SetBorderColor 0 255 0 255
 
@@ -478,15 +477,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Crusader Boots" "Crusader Gloves" "Crusader Helmet" "Fluted Bascinet" "Legion Boots" "Legion Gloves" "Secutor Helm"
+    BaseType == "Crusader Boots" "Crusader Gloves" "Crusader Helmet" "Dragonscale Boots" "Dragonscale Gauntlets" "Fluted Bascinet" "Gilded Sallet" "Hydrascale Boots" "Lacquered Helmet" "Legion Boots" "Legion Gloves" "Secutor Helm" "Serpentscale Boots" "Serpentscale Gauntlets" "Wyrmscale Boots"
     LinkedSockets < 4
     SetFontSize 26
     SetBackgroundColor 20 20 0 104
-    SetBorderColor 255 255 0 255
+    SetBorderColor 255 255 0 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Crusader Boots" "Crusader Gloves" "Crusader Helmet" "Fluted Bascinet" "Legion Boots" "Legion Gloves" "Secutor Helm"
+    BaseType == "Crusader Boots" "Crusader Gloves" "Crusader Helmet" "Dragonscale Boots" "Dragonscale Gauntlets" "Fluted Bascinet" "Gilded Sallet" "Hydrascale Boots" "Lacquered Helmet" "Legion Boots" "Legion Gloves" "Secutor Helm" "Serpentscale Boots" "Serpentscale Gauntlets" "Wyrmscale Boots"
     LinkedSockets == 4    
     SetBorderColor 255 255 0 255
     
@@ -499,7 +498,7 @@ Show
     LinkedSockets < 4
     SetFontSize 26
     SetBackgroundColor 20 20 0 104
-    SetBorderColor 255 120 20 255
+    SetBorderColor 255 120 20 120
     
 Show
     Rarity Normal Magic Rare Unique
@@ -516,7 +515,7 @@ Show
     LinkedSockets < 4
     SetFontSize 26
     SetBackgroundColor 20 20 0 104
-    SetBorderColor 120 255 20 255
+    SetBorderColor 120 255 20 120
     
 Show
     Rarity Normal Magic Rare Unique
@@ -534,15 +533,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Astral Plate" "Crusader Plate" "Glorious Plate" "Golden Plate" "Majestic Plate" "Fright Maul" "Full Plate" "Meatgrinder" "Piledriver" "Coronal Maul" "Terror Maul"
+    BaseType == "Astral Plate" "Battle Plate" "Colossus Mallet" "Coronal Maul" "Crusader Plate" "Dread Maul" "Glorious Plate" "Golden Plate" "Imperial Maul" "Majestic Plate" "Fright Maul" "Full Plate" "Meatgrinder" "Piledriver" "Plated Maul" "Steelhead" "Terror Maul"
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 250 20 20 255
+    SetBorderColor 250 20 20 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Astral Plate" "Crusader Plate" "Glorious Plate" "Golden Plate" "Majestic Plate" "Fright Maul" "Full Plate" "Meatgrinder" "Piledriver" "Coronal Maul" "Terror Maul"
+    BaseType == "Astral Plate" "Battle Plate" "Colossus Mallet" "Coronal Maul" "Crusader Plate" "Dread Maul" "Glorious Plate" "Golden Plate" "Imperial Maul" "Majestic Plate" "Fright Maul" "Full Plate" "Meatgrinder" "Piledriver" "Plated Maul" "Steelhead" "Terror Maul"
     LinkedSockets == 6
     SetBorderColor 250 20 20 255
     
@@ -550,31 +549,31 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Chain Hauberk" "Conquest Chainmail" "Foul Staff" "Imperial Staff" "Judgement Staff" "Moon Staff" "Necromancer Silks" "Serpentine Staff" "Saintly Chainmail"
+    BaseType == "Chain Hauberk" "Conquest Chainmail" "Devout Chainmail" "Ezomyte Staff" "Foul Staff" "Imperial Staff" "Judgement Staff" "Latticed Ringmail" "Military Staff" "Moon Staff" "Ornate Ringmail" "Quarterstaff" "Primordial Staff" "Serpentine Staff" "Saintly Chainmail" "Woodful Staff"
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 250 20 255 255
+    SetBorderColor 250 20 255 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Chain Hauberk" "Foul Staff" "Imperial Staff" "Judgement Staff" "Necromancer Silks" "Moon Staff" "Serpentine Staff" "Saintly Chainmail"
+    BaseType == "Chain Hauberk" "Conquest Chainmail" "Devout Chainmail" "Ezomyte Staff" "Foul Staff" "Imperial Staff" "Judgement Staff" "Latticed Ringmail" "Military Staff" "Moon Staff" "Ornate Ringmail" "Quarterstaff" "Primordial Staff" "Serpentine Staff" "Saintly Chainmail" "Woodful Staff"
     LinkedSockets == 6
     SetBorderColor 250 20 255 255
     
-# 6 socket max - str < int
+# 6 socket max - STR < INT
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Conquest Chainmail" "Occultist's Vestment" "Widowsilk Robe" "Lathi" "Judgement Staff"
+    BaseType == "Conquest Chainmail" "Elegant Ringmail" "Judgement Staff" "Lathi" "Maelström Staff" "Occultist's Vestment" "Widowsilk Robe"
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 120 20 250 255
+    SetBorderColor 120 20 250 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Occultist's Vestment" "Widowsilk Robe" "Lathi" "Judgement Staff"
+    BaseType == "Conquest Chainmail" "Elegant Ringmail" "Judgement Staff" "Lathi" "Maelström Staff" "Occultist's Vestment" "Widowsilk Robe"
     LinkedSockets == 6
     SetBorderColor 120 20 250 255
     
@@ -582,15 +581,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Colossal Tower Shield" "Brass Maul" "Karui Maul" "Totemic Maul" "Headsman Axe" "Vaal Axe" "Despot Axe" "Gavel"
+    BaseType == "Brass Maul" "Colossal Tower Shield" "Despot Axe" "Gavel" "Headsman Axe" "Karui Maul" "Saint's Hauberk" "Totemic Maul" "Vaal Axe" 
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 250 20 120 255
+    SetBorderColor 250 20 120 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Colossal Tower Shield" "Brass Maul" "Karui Maul" "Totemic Maul" "Headsman Axe" "Vaal Axe" "Despot Axe" "Gavel"
+    BaseType == "Brass Maul" "Colossal Tower Shield" "Despot Axe" "Gavel" "Headsman Axe" "Karui Maul" "Saint's Hauberk" "Totemic Maul" "Vaal Axe" 
     LinkedSockets == 6
     SetBorderColor 250 20 120 255
     
@@ -598,35 +597,35 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Imbued Wand" "Necromancer Silks"  "Occultist's Vestment" "Opal Wand" "Lathi" "Sage's Robe" "Sambar Sceptre" "Scholar's Robe" "Vaal Regalia" "Widowsilk Robe"
+    BaseType == "Destroyer Regalia" "Necromancer Silks" "Occultist's Vestment" "Sage's Robe" "Savant's Robe" "Scholar's Robe"  "Spidersilk Robe" "Vaal Regalia" "Widowsilk Robe"
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 50 50 255 255
+    SetBorderColor 50 50 255 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Imbued Wand" "Necromancer Silks"  "Occultist's Vestment" "Opal Wand" "Lathi" "Sage's Robe" "Sambar Sceptre" "Scholar's Robe" "Vaal Regalia" "Widowsilk Robe"
+    BaseType == "Destroyer Regalia" "Necromancer Silks" "Occultist's Vestment" "Sage's Robe" "Savant's Robe" "Scholar's Robe"  "Spidersilk Robe" "Vaal Regalia" "Widowsilk Robe"
     LinkedSockets == 6
     SetBorderColor 50 50 255 255
     
-# 6 socket max - int = dex
+# 6 socket max - INT = DEX
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Zodiac Leather" "Necromancer Silks" "Imperial Staff" "Serpentine Staff" "Eclipse Staff"
+    BaseType == "Crimson Raiment" "Eclipse Staff" "Imperial Staff" "Lacquered Garb" "Necromancer Silks" "Sentinel Jacket" "Serpentine Staff" 
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 20 250 255 255
+    SetBorderColor 20 250 255 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Zodiac Leather" "Necromancer Silks" "Imperial Staff" "Serpentine Staff" "Eclipse Staff"
+    BaseType == "Crimson Raiment" "Eclipse Staff" "Imperial Staff" "Lacquered Garb" "Necromancer Silks" "Sentinel Jacket" "Serpentine Staff" 
     LinkedSockets == 6
     SetBorderColor 20 250 255 255
     
-# 6 socket max - int > dex
+# 6 socket max - INT > DEX
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
@@ -634,7 +633,7 @@ Show
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 20 120 255 255
+    SetBorderColor 20 120 255 120
     
 Show
     Rarity Normal Magic Rare Unique
@@ -646,15 +645,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Blood Raiment" "Citadel Bow" "Carnal Armour" "Long Bow" "Ranger Bow" "Sadist Garb" "Short Bow" "Spidersilk Robe" "Thicket Bow"
+    BaseType == "Blood Raiment" "Citadel Bow" "Carnal Armour" "Long Bow" "Ranger Bow" "Sadist Garb" "Short Bow" "Thicket Bow"
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 125 250 20 255
+    SetBorderColor 125 250 20 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Blood Raiment" "Citadel Bow" "Carnal Armour" "Long Bow" "Ranger Bow" "Sadist Garb" "Short Bow" "Spidersilk Robe" "Thicket Bow"
+    BaseType == "Blood Raiment" "Citadel Bow" "Carnal Armour" "Long Bow" "Ranger Bow" "Sadist Garb" "Short Bow" "Thicket Bow"
     LinkedSockets == 6
     SetBorderColor 125 250 20 255
 
@@ -663,15 +662,15 @@ Show
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Assassin's Garb" "Cutthroat's Garb" "Destiny Leather" "Dragonscale Doublet" "Full Leather" "Imperial Bow" "Ivory Bow" "Maraketh Bow" "Sharkskin Tunic" "Steelwood Bow" "Thicket Bow" "Zodiac Leather"
+    BaseType == "Assassin Bow" "Assassin's Garb" "Compound Bow" "Coronal Leather" "Cutthroat's Garb" "Decimation Bow" "Decurve Bow" "Destiny Leather" "Dragonscale Doublet" "Exquisite Leather" "Full Leather" "Harbinger Bow" "Hussar Brigandine" "Imperial Bow" "Ivory Bow" "Maraketh Bow" "Sharkskin Tunic" "Spine Bow" "Steelwood Bow" "Thicket Bow" "Zodiac Leather"
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 0 255 0 255
+    SetBorderColor 0 255 0 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Assassin's Garb" "Cutthroat's Garb" "Destiny Leather" "Dragonscale Doublet" "Full Leather" "Imperial Bow" "Ivory Bow" "Maraketh Bow" "Sharkskin Tunic" "Steelwood Bow" "Thicket Bow" "Zodiac Leather"
+    BaseType == "Assassin Bow" "Assassin's Garb" "Compound Bow" "Coronal Leather" "Cutthroat's Garb" "Decimation Bow" "Decurve Bow" "Destiny Leather" "Dragonscale Doublet" "Exquisite Leather" "Full Leather" "Harbinger Bow" "Hussar Brigandine" "Imperial Bow" "Ivory Bow" "Maraketh Bow" "Sharkskin Tunic" "Spine Bow" "Steelwood Bow" "Thicket Bow" "Zodiac Leather"
     LinkedSockets == 6
     SetBorderColor 0 255 0 255
     
@@ -679,15 +678,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Battle Lamellar" "Commander's Brigandine" "Triumphant Lamellar" "War Hammer" "Lion Sword"
+    BaseType == "Battle Lamellar" "Commander's Brigandine" "Ezomyte Blade" "Full Wyrmscale" "General's Brigandine" "Infernal Sword" "Lion Sword" "Triumphant Lamellar" "War Hammer" "Wraith Sword"
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 255 255 0 255
+    SetBorderColor 255 255 0 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Battle Lamellar" "Commander's Brigandine" "Triumphant Lamellar" "War Hammer" "Lion Sword"
+    BaseType == "Battle Lamellar" "Commander's Brigandine" "Ezomyte Blade" "Full Wyrmscale" "General's Brigandine" "Infernal Sword" "Lion Sword" "Triumphant Lamellar" "War Hammer" "Wraith Sword" 
     LinkedSockets == 6
     SetBorderColor 255 255 0 255
     
@@ -695,15 +694,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Colossal Tower Shield" "Brass Maul" "Full Dragonscale" "Karui Maul" "Totemic Maul" "Headsman Axe" "Vaal Axe" "Despot Axe" 
+    BaseType == "Brass Maul" "Colossal Tower Shield" "Despot Axe" "Engraved Greatsword" "Ezomyte Axe" "Fleshripper" "Full Dragonscale" "Headsman Axe" "Jasper Chopper" "Karui Chopper" "Karui Maul" "Labrys" "Sundering Axe" "Timber Axe" "Totemic Maul" "Vaal Axe" "Void Axe"
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 250 120 20 255
+    SetBorderColor 250 120 20 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Colossal Tower Shield" "Brass Maul" "Full Dragonscale" "Karui Maul" "Totemic Maul" "Headsman Axe" "Vaal Axe" "Despot Axe" 
+    BaseType == "Brass Maul" "Colossal Tower Shield" "Despot Axe" "Engraved Greatsword" "Ezomyte Axe" "Fleshripper" "Full Dragonscale" "Headsman Axe" "Jasper Chopper" "Karui Chopper" "Karui Maul" "Labrys" "Sundering Axe" "Timber Axe" "Totemic Maul" "Vaal Axe" "Void Axe"
     LinkedSockets == 6
     SetBorderColor 250 120 20 255
 
@@ -711,15 +710,15 @@ Show
 #==================================================================================== 
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Assassin's Garb" "Zodiac Leather" "Dragonscale Doublet" "Imperial Bow" "Thicket Bow" "Maraketh Bow"
+    BaseType == "Assassin's Garb" "Zodiac Leather" "Dragonscale Doublet" "Imperial Bow" "Reaver Sword" "Tiger Sword" "Thicket Bow" "Maraketh Bow"
     LinkedSockets < 6
     SetBackgroundColor 20 20 0 104
     SetFontSize 26
-    SetBorderColor 120 255 20 255
+    SetBorderColor 120 255 20 120
     
 Show
     Rarity Normal Magic Rare Unique
-    BaseType == "Assassin's Garb" "Zodiac Leather" "Dragonscale Doublet" "Imperial Bow" "Thicket Bow" "Maraketh Bow"
+    BaseType == "Assassin's Garb" "Zodiac Leather" "Dragonscale Doublet" "Imperial Bow" "Reaver Sword" "Tiger Sword" "Thicket Bow" "Maraketh Bow"
     LinkedSockets == 6
     SetBorderColor 120 255 20 255
     
@@ -754,6 +753,7 @@ Show
     Class == "Stackable Currency"
     BaseType == "Portal Scroll" "Scroll of Wisdom"
     MinimapIcon 0 Yellow Kite
+    SetBorderColor 80 40 40 255
 
 # Highlight dropped gold with a more golden color font and light grey border
 #====================================================================================
