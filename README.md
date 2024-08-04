@@ -30,6 +30,7 @@ Basic filter + border colors based on required stats. (Work in progress, always 
 #### Highlight Rare items that do not have max linked sockets
 - slightly transparant background
 - slightly transparent colored border (border color: see next point)
+- slightly smaller font
 
 #### Wearable items get borders
 - border color dependent on stats required
@@ -49,9 +50,12 @@ Basic filter + border colors based on required stats. (Work in progress, always 
 | dex = int         | ![#00FFFF](https://via.placeholder.com/15/00FFFF/000000?text=+) cyan |
 | dex < int         | ![#007DFF](https://via.placeholder.com/15/007DFF/000000?text=+) azure |
 
+
+
 #### Highlighted items on minimap
 - all orbs get a purple triangle on the map
 
+![Path of Exile options](img/3.path_of_exile.png)
 
 ## Configuration
 
