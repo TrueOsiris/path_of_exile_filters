@@ -1,4 +1,6 @@
-# Path of Exile - filters
+# Path of Exile 1 & 2 - filters
+
+Latest filter is compatible with Path of Exile 2 v0.3
 Basic filters for path of exile
 
 ## Info
