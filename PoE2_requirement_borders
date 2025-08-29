@@ -1,0 +1,284 @@
+#####################
+####  INT = STR  ####
+#####################
+
+Show
+Rarity > Normal 
+BaseType " Crest Shield" " Crown" "Pelt " " Mantle" " Vestments" " Cuffs" " Leggings"
+SetBorderColor 250 20 250 200
+
+Show
+Rarity = Normal
+Sockets > 0
+BaseType " Crest Shield" " Crown" "Pelt " " Mantle" " Vestments" " Cuffs" " Leggings"
+SetBorderColor 250 20 250 200 
+
+#####################
+####     STR     ####
+#####################
+
+Show
+Rarity > Normal 
+BaseType " Cuirass" " Greathammer" " Greathelm" " Greaves" " Hammer" " Maul" " Mitts" " Plate" " Mace" "Tower Shield" 
+SetBorderColor 255 40 20 200
+
+Show
+Rarity = Normal
+Sockets > 0
+BaseType " Cuirass" " Greathammer" " Greathelm" " Greaves" " Hammer" " Maul" " Mitts" " Plate" " Mace" "Tower Shield" 
+SetBorderColor 255 40 20 200 
+
+#####################
+####  STR = DEX  ####
+#####################
+
+Show
+Rarity > Normal 
+BaseType " Crossbow" " Helm" " Mail" " Targe" " Gauntlets" " Armour" " Sabatons"
+SetBorderColor 255 250 20 200 
+
+Show
+Rarity = Normal
+Sockets > 0
+BaseType " Crossbow" " Helm" " Mail" " Targe" " Gauntlets" " Armour" " Sabatons"
+SetBorderColor 255 250 20 200 
+
+#####################
+####     DEX     ####
+#####################
+
+Show
+Rarity > Normal 
+BaseType " Bow" " Boots" " Bracers" " Cap" " Coat" "Hunter " " Hood" "Lizardscale " " Quiver" "Pathfinder " "Serpentscale " " Shortbow" "Shortbow" " Vest" 
+SetBorderColor 20 250 20 200 
+
+Show
+Rarity = Normal
+Sockets > 0
+BaseType " Bow" " Boots" " Bracers" " Cap" " Coat" "Hunter " " Hood" "Lizardscale " " Quiver" "Pathfinder " "Serpentscale " " Shortbow" "Shortbow" " Vest" 
+SetBorderColor 20 250 20 200
+
+#####################
+####  DEX > INT  ####
+#####################
+
+Show
+Rarity > Normal 
+BaseType " Quarterstaff" 
+SetBorderColor 40 255 180 200
+
+Show
+Rarity = Normal
+Sockets > 0
+BaseType " Quarterstaff"
+SetBorderColor 40 255 180 200 
+
+#####################
+####  DEX = INT  ####
+#####################
+
+Show
+Rarity > Normal
+BaseType " Garb" "Face Mask" " Shoes" " Mask" " Jacket" " Wraps"
+SetBorderColor 40 255 250 200
+
+Show
+Rarity = Normal
+Sockets > 0
+BaseType " Garb" "Face Mask" " Shoes" " Mask" " Jacket" " Wraps" 
+SetBorderColor 40 255 250 200 
+
+#####################
+####     INT     ####
+#####################
+
+Show
+Rarity > Normal # "Attuned Wand" "Voltaic Staff" 
+BaseType " Circlet" " Focus" " Gloves" " Raiment" " Robe" " Sandals" " Slippers" " Staff" " Tiara" " Wand"
+SetBorderColor 40 40 250 200
+
+Show
+Rarity = Normal
+Sockets > 0
+BaseType " Circlet" " Focus" " Gloves" " Raiment" " Robe" " Sandals" " Slippers" " Staff" " Tiara" " Wand"
+SetBorderColor 40 40 250 200
+
+#####################
+####  INT > STR  ####
+#####################
+
+Show
+Rarity > Normal 
+BaseType " Sceptre"
+SetBorderColor 120 20 250 200
+
+Show
+Rarity = Normal
+Sockets > 0
+BaseType " Sceptre"
+SetBorderColor 120 20 250 200 
+
+
+
+##################################
+###    ORBS, SHARDS, STONES    ###
+##################################
+
+# Currency Tier A: Gemcutter, Annullment
+Show
+Class "Currency"
+BaseType "Gemcutter's Prism" "Orb of Annulment" 
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 240 90 35
+PlayAlertSound 1 300
+PlayEffect White
+MinimapIcon 1 White Circle
+SetFontSize 40
+
+# Currency Tier B: Vaal, Chaos, Exalt, Exotic
+Show
+Class "Currency"
+BaseType "Vaal Orb" "Greater Jeweller's Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Exotic" "Exalted Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Orb of Chance"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 1 White Circle
+SetFontSize 40
+
+Show
+BaseType "Orb of Alteration" 
+MinimapIcon 0 Yellow Circle
+PlayEffect Yellow
+SetFontSize 50
+SetBackgroundColor 0 0 0 250
+
+Show
+BaseType "Divine Orb" "Greater Jeweller's Orb" "Perfect Jeweller's Orb"
+MinimapIcon 0 Purple Star
+PlayEffect Purple
+SetFontSize 50
+SetTextColor 0 0 0
+SetBackgroundColor 255 0 255 250
+SetBorderColor 0 0 0
+PlayAlertSound 8 200
+
+Show
+Class "Currency"
+BaseType "Catalyst" "Essence of" "Omen of"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 1 White Circle
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+Class "Currency"
+BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+MinimapIcon 2 Grey Circle
+
+# Fragments
+Show
+BaseType "Simulacrum" " Tablet" "Breachstone" "Barya" "Ultimatum" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook"
+SetTextColor 255 207 255
+SetBorderColor 255 207 255
+SetBackgroundColor 65 20 80
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 1 White Square
+SetFontSize 40
+
+Show
+BaseType "Waystone"
+#Rarity <= Rare
+#SetTextColor 255 255 255
+SetBorderColor 255 255 255
+PlayAlertSound 4 300
+PlayEffect White
+MinimapIcon 1 White Square
+SetFontSize 40
+
+Show
+BaseType "Splinter"
+#Rarity <= Rare
+#SetTextColor 255 255 255
+SetBorderColor 255 255 0
+PlayAlertSound 5 300
+PlayEffect White
+MinimapIcon 1 Blue Diamond
+SetFontSize 40
+
+Show
+BaseType "Mirror of Kalandra"
+MinimapIcon 0 Purple Star
+PlayEffect Purple
+SetFontSize 50
+SetTextColor 255 255 255 250
+SetBackgroundColor 255 0 255 250
+SetBorderColor 0 0 0
+PlayAlertSound 8 200
+
+
+Show
+BaseType "Scroll of Wisdom"
+PlayEffect White Temp
+SetFontSize 26
+SetBackgroundColor 20 20 20 200
+SetBorderColor 120 80 40 255
+
+Show
+BaseType " Rune"
+PlayEffect White Temp
+SetFontSize 30
+SetTextColor 255 255 255 250
+SetBackgroundColor 20 20 20 200
+SetBorderColor 120 80 40 255
+MinimapIcon 2 White Circle
+
+Show
+Class = Socketable
+BaseType "Soul"
+MinimapIcon 0 Red Circle
+PlayEffect Red
+SetFontSize 50
+SetTextColor 150 0 0 250
+SetBackgroundColor 255 255 204 200
+SetBorderColor 255 0 0 250
+
+Show 
+Class = Jewel
+MinimapIcon 0 White Diamond
+PlayAlertSound 7 200
+SetTextColor 10 150 5 250
+SetBackgroundColor 220 255 220 200
+
+#############################################################################################
+
+# Hide white armor pieces without sockets: chest, gloves, helmets, belts, boots
+Hide
+Rarity Normal
+Sockets 0
+Class "Body Armour" "Gloves" "Helmets" "Belts" "Boots"
+
+# Hide all white weapon slot items without sockets
+Hide
+Rarity Normal
+Sockets 0
+Class "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "Focus" "One Hand Maces" "Sceptres" "Staves" "Two Hand Maces" "One Hand Swords" "Two Hand Swords" "Wands" "Quivers" "Shields"
+
+Hide 
+Rarity Normal
+Class "Flasks"
+  
+#############################################################################################
+
+Show
+# Show everything by default
+SetBackgroundColor 40 40 40 180
+#SetBorderColor 255 0 0 255 # Bright red for debugging
