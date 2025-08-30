@@ -39,18 +39,19 @@ Basic filter + border colors based on required stats. (Work in progress, always 
   
 | Stat requirements | Border color |
 | ----------------- | ------------ |
-| int               | <span style="color:#0000FF">⬛</span> dark blue |
-| int > str         | <span style="color:#7D00FF">⬛</span> violet |
-| int = str         | <span style="color:#7D007D">⬛</span> purple |
-| int < str         | <span style="color:#FF007D">⬛</span> magenta / deep pink |
-| str               | <span style="color:#FF0000">⬛</span> red |
-| str > dex         | <span style="color:#FF7D00">⬛</span> vibrant orange |
-| str = dex         | <span style="color:#FFFF00">⬛</span> yellow |
-| str < dex         | <span style="color:#7DFF00">⬛</span> lime green |
-| dex               | <span style="color:#00FF00">⬛</span> green |
-| dex > int         | <span style="color:#00FF7D">⬛</span> teal |
-| dex = int         | <span style="color:#00FFFF">⬛</span> cyan |
-| dex < int         | <span style="color:#007DFF">⬛</span> azure |
+| int               | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#0000FF"/></svg> dark blue |
+| int > str         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#7D00FF"/></svg> violet |
+| int = str         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#7D007D"/></svg> purple |
+| int < str         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#FF007D"/></svg> magenta / deep pink |
+| str               | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#FF0000"/></svg> red |
+| str > dex         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#FF7D00"/></svg> vibrant orange |
+| str = dex         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#FFFF00"/></svg> yellow |
+| str < dex         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#7DFF00"/></svg> lime green |
+| dex               | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#00FF00"/></svg> green |
+| dex > int         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#00FF7D"/></svg> teal |
+| dex = int         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#00FFFF"/></svg> cyan |
+| dex < int         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#007DFF"/></svg> azure |
+
 
 
 
