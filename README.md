@@ -39,18 +39,19 @@ Basic filter + border colors based on required stats. (Work in progress, always 
   
 | Stat requirements | Border color |
 | ----------------- | ------------ |
-| int               | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#0000FF"/></svg> dark blue |
-| int > str         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#7D00FF"/></svg> violet |
-| int = str         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#7D007D"/></svg> purple |
-| int < str         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#FF007D"/></svg> magenta / deep pink |
-| str               | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#FF0000"/></svg> red |
-| str > dex         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#FF7D00"/></svg> vibrant orange |
-| str = dex         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#FFFF00"/></svg> yellow |
-| str < dex         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#7DFF00"/></svg> lime green |
-| dex               | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#00FF00"/></svg> green |
-| dex > int         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#00FF7D"/></svg> teal |
-| dex = int         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#00FFFF"/></svg> cyan |
-| dex < int         | <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><rect width="12" height="12" fill="#007DFF"/></svg> azure |
+| int               | ![ ](colors/0000FF.svg) dark blue |
+| int > str         | ![ ](colors/7D00FF.svg) violet |
+| int = str         | ![ ](colors/7D007D.svg) purple |
+| int < str         | ![ ](colors/FF007D.svg) magenta / deep pink |
+| str               | ![ ](colors/FF0000.svg) red |
+| str > dex         | ![ ](colors/FF7D00.svg) vibrant orange |
+| str = dex         | ![ ](colors/FFFF00.svg) yellow |
+| str < dex         | ![ ](colors/7DFF00.svg) lime green |
+| dex               | ![ ](colors/00FF00.svg) green |
+| dex > int         | ![ ](colors/00FF7D.svg) teal |
+| dex = int         | ![ ](colors/00FFFF.svg) cyan |
+| dex < int         | ![ ](colors/007DFF.svg) azure |
+
 
 
 
