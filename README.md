@@ -39,18 +39,19 @@ Basic filter + border colors based on required stats. (Work in progress, always 
   
 | Stat requirements | Border color |
 | ----------------- | ------------ |
-| int               | ![ ](colors/0000FF.svg) dark blue |
-| int > str         | ![ ](colors/7D00FF.svg) violet |
-| int = str         | ![ ](colors/7D007D.svg) purple |
-| int < str         | ![ ](colors/FF007D.svg) magenta / deep pink |
-| str               | ![ ](colors/FF0000.svg) red |
-| str > dex         | ![ ](colors/FF7D00.svg) vibrant orange |
-| str = dex         | ![ ](colors/FFFF00.svg) yellow |
-| str < dex         | ![ ](colors/7DFF00.svg) lime green |
-| dex               | ![ ](colors/00FF00.svg) green |
-| dex > int         | ![ ](colors/00FF7D.svg) teal |
-| dex = int         | ![ ](colors/00FFFF.svg) cyan |
-| dex < int         | ![ ](colors/007DFF.svg) azure |
+| int               | ![#](https://placehold.co/12x12/0000FF/000000) dark blue |
+| int > str         | ![#](https://placehold.co/12x12/7D00FF/000000) violet |
+| int = str         | ![#](https://placehold.co/12x12/7D007D/000000) purple |
+| int < str         | ![#](https://placehold.co/12x12/FF007D/000000) magenta / deep pink |
+| str               | ![#](https://placehold.co/12x12/FF0000/000000) red |
+| str > dex         | ![#](https://placehold.co/12x12/FF7D00/000000) vibrant orange |
+| str = dex         | ![#](https://placehold.co/12x12/FFFF00/000000) yellow |
+| str < dex         | ![#](https://placehold.co/12x12/7DFF00/000000) lime green |
+| dex               | ![#](https://placehold.co/12x12/00FF00/000000) green |
+| dex > int         | ![#](https://placehold.co/12x12/00FF7D/000000) teal |
+| dex = int         | ![#](https://placehold.co/12x12/00FFFF/000000) cyan |
+| dex < int         | ![#](https://placehold.co/12x12/007DFF/000000) azure |
+
 
 
 
